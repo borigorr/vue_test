@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+
+  node:
+    build:
+      context: ./docker/node
+    volumes:
+      - ./:/app
+    ports:
+      - "5173:5173"
